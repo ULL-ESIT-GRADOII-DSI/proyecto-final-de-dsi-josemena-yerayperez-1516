@@ -1,0 +1,25 @@
+/*estilo SASS*/
+.btn-nuestro {
+  color: white;
+  background: #A4A4A4;
+  width: 100%;
+  outline: none;
+  border-radius: 5px; }
+
+.btn-nuestro:hover, .btn-nuestro:active, .btn-nuestro:focus {
+  background: #2E2E2E;
+  box-shadow: none; }
+
+#from_nuestro {
+  border: none;
+  border-radius: 5;
+  padding: 0.5em 2em;
+  background: #A4A4A4;
+  text-transform: uppercase; }
+
+#from_nuestro:hover, #from_nuestro:active, #from_nuestro:focus {
+  background: #424242;
+  box-shadow: none;
+  color: white; }
+
+/*# sourceMappingURL=out-style-sass.css.map */

@@ -1,0 +1,376 @@
+<div class="topbar animated fadeInLeftBig"></div>
+
+<!-- Header Starts -->
+<div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-nav">
+          <div class="container">
+            <div class="navbar-header">
+                
+              <!-- Logo Starts -->
+              <br>
+              <!--div class="col-sm-3"></div-->
+              <a style="margin-left:7px; margin-rgith:7px; margin-top:17px;" class="img-responsive" href="http://concretehumanity.com/eu/"><img src="images/logot.jpg" alt="logo"></a>
+              <!-- #Logo Ends -->
+
+              <button style="margin-bottom:17px; margin-top:-17px" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Nav Starts -->
+            <div class="navbar-collapse  collapse">
+              <ul class="nav navbar-nav navbar-right scroll">
+                 <li class="active"><a href="#home">Tattoo Factory</a></li>
+                 <li ><a href="#about">Sobre nosotros</a></li>
+                 <li ><a href="#partners">Inspiración</a></li>
+                 <li style="display:none" id="etq-comparte"><a href="#contact">Comparte</a></li>
+                 <li id="google-signin"><a style="margin-top:5%;"><div class="g-signin2" data-onsuccess="onSignIn"></div></a></li>
+                 <li id="google-signout" style="display:none"><a href="#" onclick="signOut();">Sign out</a></li>
+                 <li id="user-li" style="display:none">
+                    <a id="card-user-link" href="#" role="button" data-toggle="modal" data-target="#card-user">
+                      <img id="user-img" alt="Tarjeta de usuario" src="" style="border-radius: 45px; margin-top:20%;" height="60" width="60"/>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+            <!-- #Nav Ends -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- #Header Ends -->
+    
+                
+<!-- BEGIN # MODAL LOGIN -->
+<div class="modal fade" id="card-user" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" align="center">
+        <img class="img-circle" id="card-user-img" src="" height="150x" width="150px">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+        <div>
+          <h4 align="center">Tarjeta de Usuario de Tatto Factory </h4>
+        </div>
+      </div>
+      <div>
+        <p style="font-size:20px;" align="center">Nombre:</p>
+        <p id="card-user-name" align="center"></p>
+      </div>
+      <hr width="30%">
+      <div>
+        <p style="font-size:20px;" align="center">Apellidos:</p>
+        <p id="card-user-surname" align="center"></p>
+      </div>
+      <hr width="30%">
+      <div>
+        <p style="font-size:20px;" align="center">Email:</p>
+        <p id="card-user-email" align="center"></p>
+      </div>
+      <hr width="30%" style="color:black;">
+      <div id="div-tatuajes" style="display:none; text-align:center">
+        <p style="font-size:20px;">Partes del cuerpo tatuadas:</p>
+        <p id="partes-tatuadas"></p>
+        <button id="añadir-partes-tatuadas" title="Añade las partes que te hayas tatuado.">+</button>
+      </div>
+      <hr width="30%">
+      <div style="text-align:center; display:none;" id="div-partes-tatuadas">
+        <p style="font-size:20px;" align="center">Introduzca las partes en las que tiene tattoos:</p>
+        <input align="center" id="input-partes-tatuadas" type="text" placeholder="Tobillo, brazos y costado"/>
+        <button id="btn-partes-tatuadas">Guardar</button>
+      </div>
+      <div><br><br></div>
+    </div>
+  </div>
+</div>    
+    
+<!-- works -->
+<div id="home"  class=" clearfix grid"> 
+    <figure class="effect-oscar  wowload fadeIn">
+        <img src="images/tattoos/format/chmodels4.jpg" alt="img01"/>
+        <figcaption>
+            <h2 style=" background: black; border-style: outset; border-width: 7px;">modelos</h2>
+            <p>Conoce algunos de nuestros modelos.<br>
+            <!--a href="#contact">Comenta a nuestros chic@s</a-->
+            <p>Observa sus tatuajes e inspírate.</p>
+            <form action="/modelos" method="get" style="margin-top: 1%;">
+              <input class="btn" type="submit" value="Descúbrelos">
+            </form></p>            
+        </figcaption>
+    </figure>
+        <figure class="effect-oscar  wowload fadeInUp">
+        <img src="images/tattoos/format/valoranos.jpg" alt="img01"/>
+        <figcaption>
+            <h2 style="background: black; border-style: outset; border-width: 7px;">valora</h2>
+            <p>Comparte tus opiniones respecto a los productos de C H.<br>
+            <a href="#contact">Valorar</a> 
+            <form action="/valora" method="get" style="margin-top: 1%;">
+              <input class="btn" type="submit" value="Ver valoraciones">
+            </form></p>           
+        </figcaption>
+    </figure>
+    <figure class="effect-oscar  wowload fadeInUp" id="prueba1">
+        <img src="images/Models/shane-burnell.jpg" alt="img01"/>
+        <figcaption id="prueba2">
+            <h2 style="background: black; border-style: outset; border-width: 7px;">tatuado</h2>
+            <p>Dinos cómo cuidas tus tatuajes y descubre historias de otros.<br>
+            <a href="#contact">cuéntanos</a>
+            <form action="/tatuado" method="get" style="margin-top: 1%;">
+              <input class="btn" type="submit" value="Busca consejos">
+            </form></p>
+        </figcaption>
+    </figure>
+</div>
+<!-- works -->
+
+<!-- Cirlce Starts -->
+<div id="about"  class="container spacer about">
+<h2 class="text-center wowload fadeInUp">¿Qué es Tattoo Factory?</h2>  
+  <div class="row">
+  <div class="col-sm-6 wowload fadeInLeft">
+    <h4><i class="fa fa-anchor"></i>Concrete Humanity</h4>
+    <p>Esta página, que nos adentra en el mundo del tatuaje en general, surge como complemento a la empresa de moda Concrete Humanity, la cual es una empresa con clientes por todo el mundo y con un estilo propio definido y marcado que le permiten sobresaltar en el mercado.</p>
+    
+  </div>
+  <div class="col-sm-6 wowload fadeInRight">
+  <h4><i class="fa fa-magic"></i>
+Tatto Factory</h4>
+  <p>Esta página tiene como fin generar y compartir información con todos aquellos que estan o esten a punto de introducirse en el mundo del tatuje. En ella encontraremos todo tipo de información sobre este arte; experiencias, consejos, ideas y demás.</p>    
+  </div>
+  </div>
+    </div>
+
+<!-- About Starts -->
+<div class="highlight-info">
+<div class="overlay spacer">
+<div class="container">
+<div class="row text-center  wowload fadeInDownBig">
+  <div class="col-sm-12">
+  <h1>We <i class="fa fa-heart fa-1x"></i> Tattoos</h1>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- About Ends -->
+
+<div id="partners" class="container spacer ">
+	<h2 class="text-center  wowload fadeInUp">Nuesta inspiración</h2>
+  <div class="clearfix">
+    <div class="col-sm-3 row text-center">
+        <img src="images/CH.jpg"></img>
+    </div>
+    <div class="col-sm-6">
+    <div id="carousel-testimonials" class="carousel slide testimonails  wowload fadeInRight" data-ride="carousel">
+    <div class="carousel-inner">  
+      <div class="item active animated bounceInRight row">
+      <div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="images/percha.jpg" width="100" class="img-circle img-responsive"></div>
+      <div  class="col-xs-10">
+      <p> Los pequeños detalles y nuestra decisión de optar por una tela suave de alta calidad es lo que hace que nuestra ropa sea tan cómoda de llevar día a día. </p>      
+      <span><b>Detalles</b></span>
+      </div>
+      </div>
+      <div class="item  animated bounceInRight row">
+      <div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="images/inspiracion.jpg" width="100" class="img-circle img-responsive"></div>
+      <div  class="col-xs-10">
+      <p>Nuestra inspiración proviene de varios de los lugares mas preciosos del mundo, de los tatuajes, el arte y la música. También de iconos famosos y de citas que transmiten sentimientos.</p>
+      <span><b>Inspiración</b></span>
+      </div>
+      </div>
+      <div class="item  animated bounceInRight row">
+      <div class="animated slideInLeft  col-xs-2"><img alt="portfolio" src="images/id.jpg" width="100" class="img-circle img-responsive"></div>
+      <div  class="col-xs-10">
+      <p>Tenemos la visión de evolucionar constantemente, ampliar nuestra gama y crear cosas nuevas, al tiempo que mantenemos la calidad ya que uno de nuestros lemas es; calidad antes que cantidad.</p>
+      <span><b>Innovación</b></span>
+      </div>
+      </div>
+  </div>
+
+   <!-- Indicators -->
+   	<ol class="carousel-indicators">
+    <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+    <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+  	</ol>
+  	<!-- Indicators -->
+  </div>
+    </div>
+    <div class="col-sm-3 row text-center" >
+        <img src="images/CH.jpg"></img>
+    </div>
+  </div>
+
+<!-- team -->
+<h3 class="text-center  wowload fadeInUp">Redes sociales</h3>
+<p class="text-center  wowload fadeInLeft">Síguenos en las redes sociales</p>
+<div class="row grid team  wowload fadeInUpBig">	
+	<div class=" col-sm-3 col-xs-6">
+	<figure class="effect-chico">
+        <img src="images/redes/facebook.png" alt="img01" class="img-responsive" />
+        <figcaption>
+            <p><br><br><br><a href="https://www.facebook.com/concretehumanity"><i class="fa fa-facebook"></i></a></p>            
+        </figcaption>
+    </figure>
+    </div>
+    <div class=" col-sm-3 col-xs-6">
+	<figure class="effect-chico">
+        <img src="images/redes/twitter.png" alt="img01" class="img-responsive"/>
+        <figcaption>            
+            <p><br><br><br><a href="https://twitter.com/concrete_h"><i class="fa fa-twitter"></i></a></p>            
+        </figcaption>
+    </figure>
+    </div>
+    <div class=" col-sm-3 col-xs-6">
+	<figure class="effect-chico">
+        <img src="images/redes/instagram.png" alt="img01" class="img-responsive"/>
+        <figcaption>
+            <p><br><br><br><a href="https://www.instagram.com/concretehumanity/"><i class="fa fa-instagram"></i></a></p>          
+        </figcaption>
+    </figure>
+    </div>
+    <div class=" col-sm-3 col-xs-6">
+	<figure class="effect-chico">
+        <img src="images/redes/tumblr.png" alt="img01" class="img-responsive"/>
+        <figcaption>
+            <p><br><br><br><a href="http://concrete-humanity.tumblr.com/"><i class="fa fa-tumblr"></i></a></p>
+        </figcaption>
+    </figure>
+    </div>
+</div>
+<!-- team -->
+</div>
+
+<!--Share-form Starts-->
+<div id="contact" class="spacer" style="display:none">
+
+<div class="container contactform center">
+<h2 class="text-center  wowload fadeInUp">Cuéntanos tu experiencia</h2>
+  <div class="row wowload fadeInLeftBig">      
+      <div class="col-sm-6 col-sm-offset-3 col-xs-12">
+        <!--preguntar al profe si esto debería ser un post en lugar de un get-->
+          <form action="/comparte" method=get>
+          <select class="btn btn-primary" name="categoria">
+              <!--<option value="modelos">Modelos</option>-->
+              <option value="valoranos">Valóranos</option>
+              <option value="tatuado">Tatuado</option>
+  
+          </select><br><br>
+          <input id="nombre-cmprt" type="text" placeholder="nombre" name="nombreusu">
+          <textarea rows="5" placeholder="Contenido" name="contenido"></textarea>
+          <!--<h6>Selecciona una imagen: </h6><input class="btn btn-primary" style="border:0px;" type="file"></input>-->
+          <button class="btn btn-primary" id="compartir"><i class="fa fa-paper-plane"></i> Enviar</button>
+          <!--<input type=submit class="btn btn-primary" value="Enviar"></input>-->
+        </div>
+      </form>
+  </div>
+</div>
+</div>
+<!--Share-form Ends-->
+
+<!-- Footer Starts -->
+<div class="footer text-center spacer">
+Jose Mena | <a href="">Github.</a> | Yeray Pérez.
+</div>
+<!-- # Footer Ends -->
+
+<a href="#home" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
+
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title">Title</h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->  
+</div>
+
+<!-- jquery -->
+<script src="assets/jquery.js"></script>
+
+<!-- wow script -->
+<script src="assets/wow/wow.min.js"></script>
+
+<!-- boostrap -->
+<script src="assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
+
+<!-- jquery mobile -->
+<script src="assets/mobile/touchSwipe.min.js"></script>
+<script src="assets/respond/respond.js"></script>
+
+<!-- gallery -->
+<script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
+
+<!-- custom script -->
+<script src="assets/script.js"></script>
+
+<script>src="assets/tattoo-factory.js"</script>
+
+<!-- script para el login de Google -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+<script>
+  function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    // console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    // console.log('Name: ' + profile.getName());
+    // console.log('Image URL: ' + profile.getImageUrl());
+    // console.log('Email: ' + profile.getEmail());
+    console.log("familyname: " + profile.getFamilyName());
+    console.log("familyname: " + profile.getGivenName());
+    if(window.localStorage){
+      localStorage.nombre = profile.getName();
+      localStorage.gname = profile.getGivenName();
+      localStorage.apellidos = profile.getFamilyName();
+      localStorage.image = profile.getImageUrl();
+      localStorage.email = profile.getEmail();
+      $("#etq-comparte").css("display","");
+      $("#google-signin").css("display","none");
+      $("#contact").css("display","");
+      $("#nombre-cmprt").val(localStorage.nombre);
+      $("#google-signout").css("display","");
+      $("img#card-user-img").attr("src",localStorage.image);
+      $("img#user-img").attr("src",profile.getImageUrl());
+      $("#user-li").css("display","");
+      $.get("/existe",{nombre: localStorage.nombre});
+      $("p#card-user-name").html(localStorage.gname);
+      $("p#card-user-email").html(localStorage.email);
+      $("p#card-user-surname").html(localStorage.apellidos);    
+    }
+  }
+</script>
+
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+      localStorage.clear();
+      $("#etq-comparte").css("display","none");
+      $("#google-signin").css("display","");
+      $("#contact").css("display","none");
+      $("#google-signout").css("display","none");
+      $("#user-img").css("display","none");
+    });
+  }
+</script>
+
+<script>
+  if((localStorage.nombre)&&(localStorage.nombre!=null)&&(localStorage.nombre!="")){
+    $("#etq-comparte").css("display","");
+    $("#google-signin").css("display","none");
+    $("#contact").css("display","");
+    $("#nombre-cmprt").val(localStorage.nombre);
+    $("#google-signout").css("display","");
+    $("#user-img").css("display","");
+  }
+</script>

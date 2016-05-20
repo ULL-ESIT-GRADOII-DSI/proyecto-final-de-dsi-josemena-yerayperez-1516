@@ -1,0 +1,49 @@
+/*estilo SASS*/
+
+// Codigo de colores
+
+$blanco: white;
+$gris-claro:#A4A4A4;
+$gris-oscuro:#2E2E2E;
+$gris-medio:#424242;
+
+// Codigo scss 
+
+.btn-nuestro{
+	color: $blanco;
+	background:$gris-claro;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+}
+
+.btn-nuestro{
+	&:hover,
+	&:active,
+	&:focus,{
+		background:$gris-oscuro;
+		box-shadow: none;
+	}
+		
+}
+#from_nuestro{
+	border:none;
+	border-radius: 5;
+	padding: 0.5em 2em;
+	background:$gris-claro;
+	text-transform: uppercase;
+}
+
+#from_nuestro{
+	&:hover,
+	&:active,
+	&:focus,{
+	background:$gris-medio;
+	box-shadow: none;
+	color:$blanco;
+	}
+}
+// Ejecucion de sass
+// gem install sass
+// cd public/assets 
+// $ sass --watch style-sass.scss:out-style-sass.css
