@@ -1,4 +1,4 @@
-# Proyecto final de la Asignatura Desarrollo de Sistemas Informaticos 
+# Proyecto final de la Asignatura Desarrollo de Sistemas Informáticos 
 ## 3º de Itinerario Tecnologías de la Información de ESTII ULL
 
 Hemos desarrollado una aplicación web orientada al mundo de los tatuajes donde los
@@ -9,7 +9,15 @@ Hemos integrado el sistema de login de Google, para que nuestros usuarios puedan
 haciendo uso de la plataforma de más famosa de Internet. Con el motivo de simplificar el acceso al sitio 
 y proporcionar al usuario a tener una forma de acceder sencilla al sistema. 
 
-La idea principal de la página es que los amantes de los tatuajes puedan compartir sus experiencias y relacionarse entre ellos.
+La idea principal de la página es que los amantes de los tatuajes puedan compartir sus experiencias y 
+relacionarse entre ellos, para compartir estas experiencias los usuarios deben estar logeados y podrán 
+publicar sus historias en la parte baja de la página principal, donde aparece un formulario para dicho propósito.
+
+La página principal consta de una tarjeta de usuario donde aparecen los datos del usuario, en dicha tarjeta 
+el usuario puede especificar las partes de su cuerpo en las cuales está tatuado.
+La tarjeta mencionada anteriormente, es accesible mediante la imágen de perfil del usuario conectado.
+
+Más allá, la aplicación consta de tres páginas a parte de la principal; Modelos, Valora y Tatuado.
 
 Para ellos hemos usado distintas tecnologías web que ahora enumeramos.
 
