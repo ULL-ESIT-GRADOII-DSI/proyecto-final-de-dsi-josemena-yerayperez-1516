@@ -2,31 +2,41 @@
 ## 3º de Itinerario Tecnologías de la Información de ESTII ULL
 
 Hemos desarrollado una aplicación web orientada al mundo de los tatuajes donde los
-usuario pueden compartir experiencias, sus tattos, ver los tatuajes de los modelos de la compañía
+usuario pueden compartir experiencias, sus tattoos, ver los tatuajes de los modelos de la compañía
 para poder hacerse una idea de como quedaría el futuro tatuaje. 
+
+Hemos integrado el sistema de login de Google, para que nuestros usuarios puedan acceder al sistema
+haciendo uso de la plataforma de más famosa de Internet. Con el motivo de simplificar el acceso al sitio 
+y proporcionar al usuario a tener una forma de acceder sencilla al sistema. 
+
+La idea principal de la página es que los amantes de los tatuajes puedan compartir sus experiencias y relacionarse entre ellos.
+
+Para ellos hemos usado distintas tecnologías web que ahora enumeramos.
 
 ### Tecnologías usadas:
 
 
-- REST,
-- ECMA6,
-- jQuery,
-- Node.js, 
-- ExpressJS,
-- Gulp,
-- Gulp-nodemon,
-- Gulp-minified,
-- Google Sign-In,
-- LocalStorage,
-- EJS,
-- SASS,
-- Bootstrap,
-- MongoDB, 
-- Mongoose.
+- REST
+- ECMA6
+- jQuery
+- Node.js 
+- ExpressJS
+- Gulp
+- Gulp-nodemon
+- Gulp-minified
+- Google Sign-In
+- LocalStorage
+- EJS
+- SASS
+- Bootstrap
+- MongoDB
+- Mongoose
+
 
 ### Nuestra Web
-![Imagen de la web](public/images/Captura.png)
+![Imagen de la web](public/images/Web.JPG)
 
+####[_Repositorio en Github_](https://github.com/alu0100768893/proyecto-final-de-dsi-josemena-yerayperez-1516)
 
 #### [_Campus Virtual de la Asignatura_](https://campusvirtual.ull.es/1516/course/view.php?id=144)
 
