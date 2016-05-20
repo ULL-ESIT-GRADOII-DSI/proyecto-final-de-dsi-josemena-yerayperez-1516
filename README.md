@@ -36,6 +36,8 @@ Para ellos hemos usado distintas tecnologías web que ahora enumeramos.
 ### Nuestra Web
 ![Imagen de la web](public/images/Web.JPG)
 
+###Información del Desarollo
+
 ####[_Repositorio en Github_](https://github.com/alu0100768893/proyecto-final-de-dsi-josemena-yerayperez-1516)
 
 #### [_Campus Virtual de la Asignatura_](https://campusvirtual.ull.es/1516/course/view.php?id=144)
