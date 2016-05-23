@@ -43,7 +43,7 @@ Para ellos hemos usado distintas tecnologías web que ahora enumeramos.
 
 
 ### Nuestra Web
-![Imagen de la web](public/images/Web.JPG)
+![Imagen de la web](public/images/web.JPG)
 
 ###Información del Desarollo
 
