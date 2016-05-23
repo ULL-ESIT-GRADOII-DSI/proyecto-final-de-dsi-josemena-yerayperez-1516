@@ -4,9 +4,9 @@ var gulp    = require('gulp'),
     concat  = require('gulp-concat'),
     del     = require('del'),
     minifyHTML = require('gulp-minify-html'),
-    minifyCSS  = require('gulp-minify-css'),
-    nodemon = require('gulp-nodemon'),
-    jshint = require('gulp-jshint');
+    minifyCSS  = require('gulp-minify-css');
+    //nodemon = require('gulp-nodemon'),
+    //jshint = require('gulp-jshint');
 
 
 
@@ -27,7 +27,7 @@ gulp.task('clean', function(cb) {
 });
 
 // Creo que las dos tareas no se pueden poner
-
+/*
 gulp.task('lint', function () {
   gulp.src('./public/*.js')
     .pipe(jshint())
@@ -41,3 +41,4 @@ gulp.task('develop', function () {
       console.log('restarted!')
     })
 })
+*/

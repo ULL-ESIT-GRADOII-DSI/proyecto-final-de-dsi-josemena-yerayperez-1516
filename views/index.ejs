@@ -344,7 +344,16 @@ Tatto Factory</h4>
       $.get("/existe",{nombre: localStorage.nombre});
       $("p#card-user-name").html(localStorage.gname);
       $("p#card-user-email").html(localStorage.email);
-      $("p#card-user-surname").html(localStorage.apellidos);    
+      $("p#card-user-surname").html(localStorage.apellidos);
+       if((localStorage.nombre)&&(localStorage.nombre!=null)&&(localStorage.nombre!="")){
+    $("#etq-comparte").css("display","");
+    $("#google-signin").css("display","none");
+    $("#contact").css("display","");
+    $("#nombre-cmprt").val(localStorage.nombre);
+    $("#google-signout").css("display","");
+    $("#user-img").css("display","");
+  }
+  
     }
   }
 </script>
