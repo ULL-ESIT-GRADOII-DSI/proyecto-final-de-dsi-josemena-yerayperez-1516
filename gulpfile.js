@@ -11,18 +11,15 @@ var gulp    = require('gulp'),
 
 
 gulp.task('minify', function () {
-  gulp.src('public/assets/js/*.js')
+   gulp.src('public/assets/*.js')
   .pipe(uglify())
   .pipe(gulp.dest('minified/assets/js'));
   
-  gulp.src('views/*.js')
-  .pipe(uglify())
-  .pipe(gulp.dest('minified/views/js'));
-
+ 
 
   gulp.src('public/assets/css/*.css')
-  .pipe(minifyCSS({keepBreaks:true}))
-  .pipe(gulp.dest('minified/css'))
+   .pipe(minifyCSS({keepBreaks:true}))
+   .pipe(gulp.dest('minified/css'))
 });
 
 gulp.task('clean', function(cb) {
